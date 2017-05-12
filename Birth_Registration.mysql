@@ -1,0 +1,126 @@
+-- MySQL dump 10.13  Distrib 5.6.13, for Win32 (x86)
+--
+-- Host: localhost    Database: birth_certificate
+-- ------------------------------------------------------
+-- Server version	5.6.17
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `birth_registration_details`
+--
+
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `birth_registration_details` (
+  `birthID` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(120) NOT NULL,
+  `middle_name` varchar(120) NOT NULL,
+  `last_name` varchar(120) NOT NULL,
+  `place_of_birth` varchar(120) NOT NULL,
+  `dob` date DEFAULT NULL,
+  `r_denomination` varchar(120) NOT NULL,
+  `gender` varchar(6) NOT NULL,
+  `fathers_name` varchar(120) NOT NULL,
+  `nationality_father` varchar(200) NOT NULL,
+  `mothers_name` varchar(200) NOT NULL,
+  `nationality_mother` varchar(200) NOT NULL,
+  `informant_relation` varchar(200) NOT NULL,
+  `date_of_registry` date DEFAULT NULL,
+  `registrar_name` varchar(120) NOT NULL,
+  `district` varchar(120) NOT NULL,
+  `registration_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`birthID`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `birth_registration_details`
+--
+
+/*!40000 ALTER TABLE `birth_registration_details` DISABLE KEYS */;
+INSERT INTO `birth_registration_details` VALUES (1,'Noah','Kwame','Alorwu','Sogakope','1994-07-09','Christianity','Male','Francis Alorwu','Ghanaian','Janet Yaa Abusah','Ghanaian','Mother','2017-05-05','Agbetsiafa Happy','Sogakope','2017-05-05 22:51:06'),(2,'Noah','Kwame','Alorwu','Sogakope','1994-07-09','Christianity','Male','Francis Alorwu','Ghanaian','Janet Yaa Abusah','Ghanaian','Mother','2017-05-05','Agbetsiafa Happy','Sogakope','2017-05-05 22:51:06'),(3,'Happy','Ama','Agbetsiafa','Ho','1996-10-05','Christianity','Female','Agbetsiafa','Ghanaian','Agbetsiafa Edem','Ghanaian','Grandpa','2017-05-05','Noah Alorwu','Ho Municapal','2017-05-05 22:59:30'),(4,'Alisiwen','','Edward','Kumasi','2017-05-05','Traditionalist','Male','Alisiwin','Ghana','Maame Alisiwin','Ghana','Father','2017-05-05','dhjdkjad','dsfa','2017-05-05 23:07:00'),(5,'Joel','Konadu','Ammanor','Accra','1994-07-08','Christianity','Male','Ammanor R','Ghanaian','Konadu','Ghanaian','Mother','2017-05-06','Mr. Jerry Mumbai','South - Tornu','2017-05-06 09:36:20');
+/*!40000 ALTER TABLE `birth_registration_details` ENABLE KEYS */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-05-07 23:54:15
+-- MySQL dump 10.13  Distrib 5.6.13, for Win32 (x86)
+--
+-- Host: localhost    Database: birth_certificate
+-- ------------------------------------------------------
+-- Server version	5.6.17
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `birth_registration_details`
+--
+
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `birth_registration_details` (
+  `birthID` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(120) NOT NULL,
+  `middle_name` varchar(120) NOT NULL,
+  `last_name` varchar(120) NOT NULL,
+  `place_of_birth` varchar(120) NOT NULL,
+  `dob` date DEFAULT NULL,
+  `r_denomination` varchar(120) NOT NULL,
+  `gender` varchar(6) NOT NULL,
+  `fathers_name` varchar(120) NOT NULL,
+  `nationality_father` varchar(200) NOT NULL,
+  `mothers_name` varchar(200) NOT NULL,
+  `nationality_mother` varchar(200) NOT NULL,
+  `informant_relation` varchar(200) NOT NULL,
+  `date_of_registry` date DEFAULT NULL,
+  `registrar_name` varchar(120) NOT NULL,
+  `district` varchar(120) NOT NULL,
+  `registration_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`birthID`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `birth_registration_details`
+--
+
+/*!40000 ALTER TABLE `birth_registration_details` DISABLE KEYS */;
+INSERT INTO `birth_registration_details` VALUES (1,'Noah','Kwame','Alorwu','Sogakope','1994-07-09','Christianity','Male','Francis Alorwu','Ghanaian','Janet Yaa Abusah','Ghanaian','Mother','2017-05-05','Agbetsiafa Happy','Sogakope','2017-05-05 22:51:06'),(2,'Noah','Kwame','Alorwu','Sogakope','1994-07-09','Christianity','Male','Francis Alorwu','Ghanaian','Janet Yaa Abusah','Ghanaian','Mother','2017-05-05','Agbetsiafa Happy','Sogakope','2017-05-05 22:51:06'),(3,'Happy','Ama','Agbetsiafa','Ho','1996-10-05','Christianity','Female','Agbetsiafa','Ghanaian','Agbetsiafa Edem','Ghanaian','Grandpa','2017-05-05','Noah Alorwu','Ho Municapal','2017-05-05 22:59:30'),(4,'Alisiwen','','Edward','Kumasi','2017-05-05','Traditionalist','Male','Alisiwin','Ghana','Maame Alisiwin','Ghana','Father','2017-05-05','dhjdkjad','dsfa','2017-05-05 23:07:00'),(5,'Joel','Konadu','Ammanor','Accra','1994-07-08','Christianity','Male','Ammanor R','Ghanaian','Konadu','Ghanaian','Mother','2017-05-06','Mr. Jerry Mumbai','South - Tornu','2017-05-06 09:36:20');
+/*!40000 ALTER TABLE `birth_registration_details` ENABLE KEYS */;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2017-05-07 23:54:36
